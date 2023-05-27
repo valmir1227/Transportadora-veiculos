@@ -19,7 +19,7 @@ export default function Header() {
             <AiOutlineClockCircle size="18px" />
             Horário de funcionamento
           </span>
-          <p>seg-sab: 7h às 17h</p>
+          <p>seg-sáb: 7h às 17h</p>
         </a>
         <a href="mailto:almeidavalmir76@gmail.com?subject=Assunto do Email">
           <span>
