@@ -4,10 +4,8 @@
   box-sizing: border-box;
 }
 
-:root {
-  $red: #ee3131;
-  $white: #fff;
-  $grey: #b0b0b0;
+a {
+  text-decoration: none;
 }
 
 @media (max-width: 1080px) {
