@@ -120,7 +120,7 @@
 
   p {
     margin-top: 0.6rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   main {
@@ -172,7 +172,7 @@
   p {
     color: #444;
     margin-top: 0.6rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
@@ -188,7 +188,7 @@
 
   p {
     margin-top: 0.6rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   main {
@@ -252,7 +252,7 @@
   p {
     color: #444;
     margin-top: 0.6rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
@@ -336,6 +336,73 @@
   p {
     color: #444;
     margin-top: 0.6rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
+
+.carCare {
+  width: 100vw;
+  background: url("../assets/car-care.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 124px;
+
+  p {
+    color: $white;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 1rem 1.5rem;
+    background: $white;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #777;
+    border-radius: 4px;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+.services {
+  width: 100vw;
+  padding: 0 124px;
+  text-align: center;
+
+  .heading {
+    max-width: 700px;
+    margin: 70px auto;
+
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+
+      span {
+        color: $red;
+      }
+    }
+
+    p {
+      margin-top: 1.2rem;
+      color: #848484;
+    }
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+  }
+}
+

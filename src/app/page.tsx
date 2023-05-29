@@ -5,14 +5,18 @@ import Image from "next/image";
 import { IoIosPeople } from "react-icons/io";
 import { BsAwardFill } from "react-icons/bs";
 import { MdMiscellaneousServices } from "react-icons/md";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
+
 import carPolish from "./assets/car-polish.jpg";
 import insulfilm from "./assets/insulfilm.jpg";
 import insulfilmHome from "./assets/insulfim-2.jpg";
 import carWash from "./assets/car-wash.jpg";
 import styles from "./styles/home.module.scss";
+import Link from "next/link";
+import CardService from "./components/service-card/CardService";
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState("about");
+  const [activeSection, setActiveSection] = useState<string>("about");
 
   const handleActiveSection = (section: string) => {
     setActiveSection(section);
@@ -28,9 +32,7 @@ export default function Home() {
             de Insulfilm para vidros automotivos e residenciais, polimento e
             cristalização de pintura para restaurar o brilho e proteger contra
             danos, além da higienização interna completa, garantindo um ambiente
-            limpo e confortável. Nosso objetivo é proporcionar cuidados
-            automotivos de qualidade, mantendo seu veículo com uma aparência
-            impecável e protegido.
+            limpo e confortável.
           </p>
           <a href="#about">Saíba Mais</a>
         </div>
@@ -39,24 +41,33 @@ export default function Home() {
       <section id="about" className={styles.about}>
         <div className={styles.buttons}>
           <button
-            className={styles.active}
+            className={activeSection === "about" ? styles.active : ""}
             onClick={() => handleActiveSection("about")}
           >
             <h3>Sobre nós</h3>
             <p>Historia da empresa</p>
           </button>
 
-          <button onClick={() => handleActiveSection("insulfilm")}>
+          <button
+            className={activeSection === "insulfilm" ? styles.active : ""}
+            onClick={() => handleActiveSection("insulfilm")}
+          >
             <h3>Insulfilm</h3>
             <p>Veicular e residencial</p>
           </button>
 
-          <button onClick={() => handleActiveSection("sanitation")}>
+          <button
+            className={activeSection === "sanitation" ? styles.active : ""}
+            onClick={() => handleActiveSection("sanitation")}
+          >
             <h3> Higiênização </h3>
             <p> Lavagem e demais</p>
           </button>
 
-          <button onClick={() => handleActiveSection("polish")}>
+          <button
+            className={activeSection === "polish" ? styles.active : ""}
+            onClick={() => handleActiveSection("polish")}
+          >
             <h3>Polimento</h3>
             <p>Cristalização de pintura</p>
           </button>
@@ -280,6 +291,39 @@ export default function Home() {
             </main>
           </div>
         )}
+      </section>
+
+      <section className={styles.carCare}>
+        <p>
+          Invista no cuidado do seu carro na garagem, e ele lhe proporcionará
+          segurança nas estradas.
+        </p>
+        <a href="/">
+          Fazer orçamento
+          <FaRegArrowAltCircleRight color="#333" />
+        </a>
+      </section>
+
+      <section className={styles.services}>
+        <div className={styles.heading}>
+          <h2>
+            Nossos <span>serviços</span>
+          </h2>
+          <p>
+            There are many variations of passages of Lorem Ipsum typesetting
+            industry has been the industrys standard dummy text ever since the
+            been when an unknown printer.
+          </p>
+        </div>
+
+        <main>
+          <CardService image="https://img.freepik.com/fotos-gratis/lindo-carro-no-servico-de-lavagem_23-2149212221.jpg?w=1060&t=st=1685326394~exp=1685326994~hmac=ccb07256e9ae4f6ae2fe283ae9ccec31e996c9227dd9973347b972283025f853" />
+          <CardService image="https://img.freepik.com/fotos-gratis/close-no-processo-de-cuidado-do-carro_23-2149193568.jpg?size=626&ext=jpg&uid=R37847853&ga=GA1.2.1932660964.1667391834&semt=ais" />
+          <CardService image="https://img.freepik.com/fotos-gratis/sedan-azul-esporte-estacionado-no-quintal_114579-5078.jpg?size=626&ext=jpg&uid=R37847853&ga=GA1.2.1932660964.1667391834&semt=sph" />
+          <CardService image="https://img.freepik.com/fotos-gratis/homem-polindo-o-interior-do-carro-no-servico-de-atendimento_1303-26882.jpg?size=626&ext=jpg&uid=R37847853&ga=GA1.2.1932660964.1667391834&semt=ais" />
+          <CardService image="https://img.freepik.com/fotos-gratis/lindo-carro-no-servico-de-lavagem_23-2149212221.jpg?w=1060&t=st=1685326394~exp=1685326994~hmac=ccb07256e9ae4f6ae2fe283ae9ccec31e996c9227dd9973347b972283025f853" />
+          <CardService image="https://img.freepik.com/fotos-gratis/lindo-carro-no-servico-de-lavagem_23-2149212221.jpg?w=1060&t=st=1685326394~exp=1685326994~hmac=ccb07256e9ae4f6ae2fe283ae9ccec31e996c9227dd9973347b972283025f853" />
+        </main>
       </section>
     </main>
   );
