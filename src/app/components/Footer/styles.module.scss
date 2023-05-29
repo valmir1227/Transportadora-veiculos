@@ -1,0 +1,143 @@
+@import "../../styles/variables";
+
+.footer {
+  width: 100vw;
+  background-color: #191f23;
+  padding: 70px 124px;
+  margin-top: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.company {
+  width: 276px;
+
+  .logo {
+    width: 100px;
+    height: 100px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: covers;
+    }
+  }
+
+  p {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+
+  .socialMedia {
+    display: flex;
+    gap: 10px;
+    transition: all 0.3s;
+
+    a {
+      padding: 0.7rem;
+      border-radius: 4px;
+      color: $white;
+      border: 1px solid $grey;
+      margin-top: 15px;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
+
+.ourServices {
+  width: 276px;
+
+  h2 {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      width: 30%;
+      height: 3px;
+      background: $red;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+    gap: 10px;
+
+    a {
+      color: #b0b0b0;
+      transition: all 0.3s;
+      position: relative;
+
+      &:hover {
+        color: $red;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  width: 276px;
+
+  h2 {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      width: 30%;
+      height: 3px;
+      background: $red;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+    gap: 10px;
+
+    li {
+      color: #b0b0b0;
+      transition: all 0.3s;
+      position: relative;
+      font-size: 0.9rem;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        p {
+          font-size: 0.9rem;
+          margin-top: 0.5srem;
+        }
+      }
+    }
+  }
+}

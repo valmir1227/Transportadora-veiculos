@@ -4,7 +4,7 @@ import React from "react";
 import { GiSmartphone } from "react-icons/gi";
 import { AiOutlineMail, AiOutlineClockCircle } from "react-icons/ai";
 
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo.png";
 import styles from "./styles.module.scss";
 
 export default function Header() {
@@ -28,7 +28,6 @@ export default function Header() {
           </span>
           <p>seuEmail@email.com</p>
         </a>
-
 
         <a href="tel: +5533991113641">
           <span>

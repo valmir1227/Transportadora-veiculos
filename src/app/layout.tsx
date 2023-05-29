@@ -3,6 +3,7 @@ import Header from "./components/Header/header";
 
 import "./styles/globals.scss";
 import Navigation from "./components/Navigation/navigation";
+import Footer from "./components/Footer/footer";
 
 const poppins = Inter({
   weight: ["300", "400", "500", "600", "700"],
@@ -21,6 +22,7 @@ export default function RootLayout({
         <Header />
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

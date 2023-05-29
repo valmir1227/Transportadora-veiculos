@@ -5,15 +5,16 @@ import styles from "./style.module.scss";
 
 interface CardServicesProps {
   image: string;
+  description: string;
 }
 
-export default function CardService({ image }: CardServicesProps) {
+export default function CardService({ image, description }: CardServicesProps) {
   return (
     <div className={styles.card}>
       <div className={styles.cardImage}>
         <Image src={image} alt="" width={400} height={400} />
       </div>
-      <div className={styles.title}>Polimento</div>
+      <div className={styles.title}>{description}</div>
       <div className={styles.description}>
         <p>
           There are many variations of passages of Lorem Ipsum typesetting
