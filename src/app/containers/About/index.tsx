@@ -1,14 +1,8 @@
-import Image from "next/image";
-import { useState } from "react";
 
 import { IoIosPeople } from "react-icons/io";
 import { BsAwardFill } from "react-icons/bs";
 import { MdMiscellaneousServices } from "react-icons/md";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
-import carPolish from "../../assets/car-polish.jpg";
-import insulfilm from "../../assets/insulfilm.jpg";
-import insulfilmHome from "../../assets/insulfim-2.jpg";
 import carWash from "../../assets/car-wash.jpg";
 
 import styles from "./styles.module.scss";

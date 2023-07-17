@@ -15,11 +15,8 @@ export default function Index() {
       <Home />
       <About />
       <section className={styles.carCare}>
-        <p>
-          Invista no cuidado do seu carro na garagem, e ele lhe proporcionará
-          segurança nas estradas.
-        </p>
-        <a href="/">
+        <p>Faça um orçamento sem compromisso.</p>
+        <a href="/orçamento">
           Fazer orçamento
           <FaRegArrowAltCircleRight color="#333" />
         </a>
@@ -28,5 +25,5 @@ export default function Index() {
       <LatestProjects />
       <Clients />
     </main>
-  );  
+  );
 }

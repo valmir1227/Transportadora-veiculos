@@ -18,6 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
+      <head>
+        <title>Ola Mundo</title>
+      </head>
       <body className={poppins.className}>
         <Header />
         <Navigation />

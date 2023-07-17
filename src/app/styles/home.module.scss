@@ -5,13 +5,30 @@
 }
 
 .carCare {
-  width: 100vw;
   background: url("../assets/car-care.jpg");
   background-size: cover;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 124px;
+  text-align: center;
+
+  @media (min-width: $mobileS) {
+    padding: 2.1rem 1rem;
+    flex-direction: column;
+  }
+
+  @media (min-width: $mobileL) {
+    padding: 2.1rem 2.1rem;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 2rem 4rem;
+    flex-direction: row;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 2rem 8rem;
+  }
 
   p {
     color: $white;
@@ -30,6 +47,7 @@
     font-weight: 500;
     color: #777;
     border-radius: 4px;
+    margin-top: 1rem;
 
     &:hover {
       filter: brightness(0.9);

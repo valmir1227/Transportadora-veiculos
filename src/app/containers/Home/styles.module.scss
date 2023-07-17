@@ -16,18 +16,29 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
   }
-  @media (min-width: 768px) {
-    padding: 0 120px;
+
+  @media (min-width: $mobileS) {
+    padding: 2.1rem 1rem;
   }
-  @media (max-width: 768px) {
-    padding: 0 1rem;
+
+  @media (min-width: $mobileL) {
+    padding: 2.1rem 2.1rem;
   }
+
+  @media (min-width: $tablet) {
+    padding: 2rem 4rem;
+  }
+  
+  @media (min-width: $laptop) {
+    padding: 2rem 8rem;
+  }
+
   .text {
     width: 100%;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
-    @media (min-width: 768px) {
+    transform: translateY(-60%);
+    @media (min-width: $laptop) {
       width: 70%;
     }
 
@@ -36,7 +47,8 @@
       line-height: 4rem;
       color: $white;
       font-weight: 700;
-      @media (max-width: 468px) {
+
+      @media (max-width: $mobileL) {
         font-size: 2.6rem;
         line-height: 3rem;
       }
