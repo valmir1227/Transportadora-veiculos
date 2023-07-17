@@ -14,14 +14,17 @@ export default function Header() {
         <Image src={logo} alt="stopcar films logo" />
       </div>
       <nav className={styles.navigation}>
-        <a href="/">
+        <a href="/" className={styles.openTime}>
           <span>
             <AiOutlineClockCircle size="18px" />
             Horário de funcionamento
           </span>
           <p>seg-sáb: 7h às 17h</p>
         </a>
-        <a href="mailto:almeidavalmir76@gmail.com?subject=Assunto do Email">
+        <a
+          href="mailto:almeidavalmir76@gmail.com?subject=Assunto do Email"
+          className={styles.email}
+        >
           <span>
             <AiOutlineMail size="18px" />
             E-mail

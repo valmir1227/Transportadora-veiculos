@@ -6,12 +6,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 120px;
+
+  @media (min-width: 768px) {
+    padding: 0 120px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 }
 .navigation {
   display: flex;
-  gap: 6.6rem;
   font-size: 0.8rem;
+  gap: 6rem;
+  @media (max-width: 768px) {
+    gap: 1rem;
+
+    .openTime,
+    .email {
+      display: none;
+    }
+  }
 
   a {
     color: $grey;
@@ -39,8 +53,8 @@
 }
 
 .logo {
-  width: 6.4rem;
-  height: 6.4rem;
+  width: 4rem;
+  height: 4rem;
 
   img {
     width: 100%;

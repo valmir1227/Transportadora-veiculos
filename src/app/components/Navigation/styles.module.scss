@@ -11,6 +11,13 @@
   top: 0;
   z-index: 99;
 
+  @media (min-width: 768px) {
+    padding: 0 120px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
+
   li {
     display: flex;
     align-items: center;
