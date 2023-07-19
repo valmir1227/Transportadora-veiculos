@@ -5,33 +5,24 @@ export default function Navigation() {
   return (
     <nav className={styles.navigation}>
       <li>
-        <a className={styles.active} href="">
-          Inicio
+        <a className={styles.active} href="/">
+          Home
         </a>
         <RxDividerVertical />
       </li>
+
       <li>
-        <a href="">Sobre</a>
+        <a href="#about">Sobre</a>
         <RxDividerVertical />
       </li>
 
       <li>
-        <a href="">Serviços</a>
+        <a href="#services">Serviços</a>
         <RxDividerVertical />
       </li>
 
       <li>
-        <a href="">Projetos</a>
-        <RxDividerVertical />
-      </li>
-
-      <li>
-        <a href="">Equipe</a>
-        <RxDividerVertical />
-      </li>
-
-      <li>
-        <a href="">Contato</a>
+        <a href="#contact">Contato</a>
       </li>
     </nav>
   );
