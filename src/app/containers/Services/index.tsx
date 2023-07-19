@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 export default function Services() {
   return (
-    <section className={styles.services}>
+    <section id="services" className={styles.services}>
       <div className={styles.heading}>
         <h2>
           Nossos <span>serviços</span>

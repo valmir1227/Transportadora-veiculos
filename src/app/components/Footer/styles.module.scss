@@ -1,22 +1,36 @@
 @import "../../styles/variables";
 
 .footer {
-  width: 100vw;
-  background-color: #191f23;
-  padding: 70px 124px;
-  margin-top: 70px;
-
+  background-color: $dark-grey;
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
+  margin-top: 4rem;
+  flex-direction: column !important;
+
+  @media (min-width: $mobileS) {
+    padding: 2.1rem 1rem;
+  }
+
+  @media (min-width: $mobileL) {
+    padding: 2.1rem 2.1rem;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 2rem 4rem;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 4rem 8rem;
+  }
 }
 
 .company {
   width: 276px;
 
   .logo {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 
     img {
       width: 100%;
@@ -58,6 +72,8 @@
     font-size: 18px;
     font-weight: 600;
     position: relative;
+    margin-top: 1rem;
+
 
     &::before {
       content: "";
@@ -105,6 +121,7 @@
     font-size: 18px;
     font-weight: 600;
     position: relative;
+    margin-top: 1rem;
 
     &::before {
       content: "";

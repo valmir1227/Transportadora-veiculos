@@ -28,7 +28,7 @@
   @media (min-width: $tablet) {
     padding: 2rem 4rem;
   }
-  
+
   @media (min-width: $laptop) {
     padding: 2rem 8rem;
   }
@@ -39,7 +39,7 @@
     top: 50%;
     transform: translateY(-60%);
     @media (min-width: $laptop) {
-      width: 70%;
+      width: 80%;
     }
 
     h1 {
@@ -56,13 +56,11 @@
 
     p {
       color: #e0e0e0;
-      margin: 10px 0;
-      padding-bottom: 20px;
+      margin: 2rem 0;
     }
 
     a {
       border: 1px solid $white;
-
       padding: 0.8rem 2.8rem;
       font-size: 0.8rem;
       letter-spacing: 1px;

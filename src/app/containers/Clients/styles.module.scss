@@ -1,7 +1,6 @@
 @import "../../styles/variables";
 
 .section {
-  width: 100vw;
   display: flex;
   margin-top: 4rem;
   justify-content: space-between;
@@ -9,16 +8,18 @@
 
   @media (min-width: $mobileS) {
     flex-direction: column;
-    }
-  
+  }
 
- 
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
 }
 
 .contact {
-  width: 50%;
   background: $dark-grey;
   @media (min-width: $mobileS) {
+    width: 100%;
+    padding: 2.1rem 1rem;
   }
 
   @media (min-width: $mobileL) {
@@ -26,15 +27,12 @@
   }
 
   @media (min-width: $tablet) {
+    width: 50%;
     padding: 2rem 4rem;
   }
 
   @media (min-width: $laptop) {
     padding: 4rem 8rem;
-  }
-
- @media (min-width: $mobileS) {
-  width: 100%;
   }
 
   h2 {
@@ -99,10 +97,22 @@
 }
 
 .customers {
-  width: 50%;
   background: #f5f6f6;
-  padding: 50px 124px 0 50px;
   overflow-y: scroll;
+
+  @media (min-width: $mobileS) {
+    width: 100%;
+    padding: 2.1rem 1rem;
+  }
+
+  @media (min-width: $mobileL) {
+    padding: 2.1rem 2.1rem;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 2rem 4rem;
+    width: 50%;
+  }
 
   h2 {
     color: $dark-grey;

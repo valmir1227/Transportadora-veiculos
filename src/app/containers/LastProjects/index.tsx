@@ -22,7 +22,7 @@ export default function LatestProjects() {
   }
 
   return (
-    <section className={styles.latestProjects}>
+    <section id="gallery" className={styles.latestProjects}>
      
       <main className={styles.content}>
         <Swiper

@@ -42,41 +42,41 @@ export default function Footer() {
       </div>
 
       <div className={styles.ourServices}>
-        <h2>Nossos Serviços</h2>
+        <h2>Navegação</h2>
 
         <ul>
-          <a href="">
+          <a href="/">
             <span>
               <MdOutlineKeyboardArrowRight size="20px" />
-              Lavagem
+              Home
             </span>
           </a>
 
-          <a href="">
+          <a href="#about">
             <span>
               <MdOutlineKeyboardArrowRight size="20px" />
-              Insulfilm
+              Sobre nós
             </span>
           </a>
 
-          <a href="">
+          <a href="#budget">
             <span>
               <MdOutlineKeyboardArrowRight size="20px" />
-              Polimento
+              Orçamento
             </span>
           </a>
 
-          <a href="">
+          <a href="#services">
             <span>
               <MdOutlineKeyboardArrowRight size="20px" />
-              Limpeza Interna
+              Serviços
             </span>
           </a>
 
-          <a href="">
+          <a href="#contact">
             <span>
               <MdOutlineKeyboardArrowRight size="20px" />
-              Estética Automotiva
+              Contato
             </span>
           </a>
         </ul>
@@ -99,7 +99,7 @@ export default function Footer() {
               <MdOutlineEmail size="20px" />
               E-mail
             </span>
-            <p>email@email.com</p>
+            <p>jl.socorroauto@gmail.com</p>
           </li>
 
           <li>
@@ -107,7 +107,11 @@ export default function Footer() {
               <BsPhone size="20px" />
               Telefone
             </span>
-            <p>(33) 99111-3641</p>
+
+            <p>
+              <a href="tel: +5531997476378"></a>
+              (31) 99747-6378
+            </p>
           </li>
         </ul>
       </div>

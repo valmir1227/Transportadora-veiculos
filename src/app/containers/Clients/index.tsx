@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 export default function Clients() {
   return (
-    <section className={styles.section}>
+    <section id="contact" className={styles.section}>
       <div className={styles.contact}>
         <div>
           <h2>

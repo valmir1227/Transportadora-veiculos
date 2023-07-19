@@ -14,7 +14,7 @@ export default function Index() {
     <main className={styles.main}>
       <Home />
       <About />
-      <section className={styles.carCare}>
+      <section id="budget" className={styles.carCare}>
         <p>Faça um orçamento sem compromisso.</p>
         <a href="/orçamento">
           Fazer orçamento
