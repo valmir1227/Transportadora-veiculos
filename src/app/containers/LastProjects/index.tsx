@@ -1,35 +1,33 @@
 import Image from "next/image";
-import styles from "./styles.module.scss";
-
-import mecanic from "../../assets/mecanic.png";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
 import { Autoplay, Pagination } from "swiper";
 
+import styles from "./styles.module.scss";
+import { useMediaQuery } from "react-responsive";
+
+
 export default function LatestProjects() {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+
+  let slidesPerView = 3; // Tamanho padrão para desktop
+
+  if (isMobile) {
+    slidesPerView = 1;
+  } else if (isTablet) {
+    slidesPerView = 2;
+  }
+
   return (
     <section className={styles.latestProjects}>
-      <div className={styles.leftSection}>
-        <div className={styles.text}>
-          <h2>Últimos trabalhos</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iu.
-          </p>
-        </div>
-        <div className={styles.image}>
-          <Image src={mecanic} alt="" width={400} height={400} />
-        </div>
-      </div>
+     
       <main className={styles.content}>
         <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
+          slidesPerView={slidesPerView}
+          spaceBetween={10}
           speed={1000}
           autoplay={{
             delay: 2500,

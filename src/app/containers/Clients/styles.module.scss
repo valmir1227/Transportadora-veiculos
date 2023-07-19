@@ -2,17 +2,40 @@
 
 .section {
   width: 100vw;
-  height: 80vh;
   display: flex;
-  margin-top: 70px;
+  margin-top: 4rem;
   justify-content: space-between;
   overflow: hidden;
+
+  @media (min-width: $mobileS) {
+    flex-direction: column;
+    }
+  
+
+ 
 }
 
 .contact {
   width: 50%;
   background: $dark-grey;
-  padding: 50px 124px;
+  @media (min-width: $mobileS) {
+  }
+
+  @media (min-width: $mobileL) {
+    padding: 2.1rem 2.1rem;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 2rem 4rem;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 4rem 8rem;
+  }
+
+ @media (min-width: $mobileS) {
+  width: 100%;
+  }
 
   h2 {
     color: $white;

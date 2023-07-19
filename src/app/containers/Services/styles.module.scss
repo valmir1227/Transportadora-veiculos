@@ -1,13 +1,30 @@
 @import "../../styles/variables";
 
 .services {
-  width: 100vw;
-  padding: 0 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  @media (min-width: $mobileS) {
+    padding: 2.1rem 1rem;
+  }
+
+  @media (min-width: $mobileL) {
+    padding: 2.1rem 2.1rem;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 2rem 4rem;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 2rem 8rem;
+  }
 
   .heading {
     max-width: 700px;
-    margin: 70px auto;
+    text-align: center;
+    margin-top: 4rem;
 
     h2 {
       font-size: 30px;
@@ -25,10 +42,21 @@
   }
 
   main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
+    margin-top: 4rem;
+
+    @media (min-width: $mobileS) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: $tablet) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: $laptop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }

@@ -19,25 +19,25 @@ export default function Header() {
             <AiOutlineClockCircle size="18px" />
             Horário de funcionamento
           </span>
-          <p>seg-sáb: 7h às 17h</p>
+          <p>seg-sáb: 7h às 18h</p>
         </a>
         <a
-          href="mailto:almeidavalmir76@gmail.com?subject=Assunto do Email"
+          href="mailto:jl.socorroauto@gmail.com?subject=Assunto do Email"
           className={styles.email}
         >
           <span>
             <AiOutlineMail size="18px" />
             E-mail
           </span>
-          <p>seuEmail@email.com</p>
+          <p>jl.socorroauto@gmail.com</p>
         </a>
 
-        <a href="tel: +5533991113641">
+        <a href="tel: +5531997476378">
           <span>
             <GiSmartphone size="18px" />
             Ligue agora
           </span>
-          <p>(33) 99111-3641</p>
+          <p>(31) 99747-6378</p>
         </a>
       </nav>
     </header>

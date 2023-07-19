@@ -1,8 +1,9 @@
 @import "../../styles/variables";
 
 .card {
-  width: 22rem;
+  max-width: 30rem;
   height: 26rem;
+  max-height: 40rem;
   position: relative;
 
   .cardImage {
