@@ -6,6 +6,7 @@ import { AiOutlineMail, AiOutlineClockCircle } from "react-icons/ai";
 
 import logo from "../../assets/logo.png";
 import styles from "./styles.module.scss";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -14,14 +15,14 @@ export default function Header() {
         <Image src={logo} alt="stopcar films logo" />
       </div>
       <nav className={styles.navigation}>
-        <a href="/" className={styles.openTime}>
+        <Link href="/" className={styles.openTime}>
           <span>
             <AiOutlineClockCircle size="18px" />
             Horário de funcionamento
           </span>
           <p>seg-sáb: 7h às 18h</p>
-        </a>
-        <a
+        </Link>
+        <Link
           href="mailto:jl.socorroauto@gmail.com?subject=Assunto do Email"
           className={styles.email}
         >
@@ -30,15 +31,15 @@ export default function Header() {
             E-mail
           </span>
           <p>jl.socorroauto@gmail.com</p>
-        </a>
+        </Link>
 
-        <a href="tel: +5531997476378">
+        <Link href="tel: +5531997476378">
           <span>
             <GiSmartphone size="18px" />
             Ligue agora
           </span>
           <p>(31) 99747-6378</p>
-        </a>
+        </Link>
       </nav>
     </header>
   );

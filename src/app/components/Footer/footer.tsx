@@ -1,17 +1,13 @@
 import Image from "next/image";
-
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { RiWhatsappFill } from "react-icons/ri";
 import styles from "./styles.module.scss";
 import { MdOutlineEmail, MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsPhone } from "react-icons/bs";
 
 import logo from "../../assets/logo.png";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -26,18 +22,18 @@ export default function Footer() {
           Possimus, quidem praesentium.
         </p>
         <div className={styles.socialMedia}>
-          <a href="">
+          <Link
+            href="https://instagram.com/jltransportes__?igshid=OGQ5ZDc2ODk2ZA=="
+            target="_blank"
+          >
             <AiFillInstagram />
-          </a>
-          <a href="">
-            <AiFillFacebook />
-          </a>
-          <a href="">
-            <AiOutlineTwitter />
-          </a>
-          <a href="">
-            <AiFillLinkedin />
-          </a>
+          </Link>
+          <Link
+            href="https://wa.me/5531997476378?text=Ol%C3%A1%2C+vim+pelo+seu+site.+Poderia+me+ajudar%3F"
+            target="_blank"
+          >
+            <RiWhatsappFill />
+          </Link>
         </div>
       </div>
 
@@ -45,40 +41,40 @@ export default function Footer() {
         <h2>Navegação</h2>
 
         <ul>
-          <a href="/">
+          <Link href="/">
             <span>
               <MdOutlineKeyboardArrowRight size="20px" />
               Home
             </span>
-          </a>
+          </Link>
 
-          <a href="#about">
+          <Link href="#about">
             <span>
               <MdOutlineKeyboardArrowRight size="20px" />
               Sobre nós
             </span>
-          </a>
+          </Link>
 
-          <a href="#budget">
+          <Link href="#budget">
             <span>
               <MdOutlineKeyboardArrowRight size="20px" />
               Orçamento
             </span>
-          </a>
+          </Link>
 
-          <a href="#services">
+          <Link href="#services">
             <span>
               <MdOutlineKeyboardArrowRight size="20px" />
               Serviços
             </span>
-          </a>
+          </Link>
 
-          <a href="#contact">
+          <Link href="#contact">
             <span>
               <MdOutlineKeyboardArrowRight size="20px" />
               Contato
             </span>
-          </a>
+          </Link>
         </ul>
       </div>
 
@@ -109,8 +105,7 @@ export default function Footer() {
             </span>
 
             <p>
-              <a href="tel: +5531997476378"></a>
-              (31) 99747-6378
+              <Link href="tel: +5531997476378">(31) 99747-6378</Link>
             </p>
           </li>
         </ul>

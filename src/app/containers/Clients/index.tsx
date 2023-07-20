@@ -11,8 +11,12 @@ export default function Clients() {
             Entre em <span>contato</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Repudiandae repellendus exercitationem id...
+            Estamos empolgados para ouvir de você e oferecer os melhores
+            serviços de transporte de veículos disponíveis no mercado. Nossa
+            equipe altamente dedicada está pronta para ajudá-lo em todas as
+            etapas do processo, desde fornecer informações detalhadas sobre
+            nossos serviços até resolver quaisquer dúvidas ou preocupações que
+            você possa ter.
           </p>
           <form>
             <strong>Envie-nos uma mensagem</strong>
@@ -39,8 +43,10 @@ export default function Clients() {
           </h2>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
-            laborum nihil voluptatem ad dicta pariatur veritatis.
+            Nossos clientes são a base do nosso sucesso, e suas opiniões e
+            comentários são inestimáveis para nós. Apreciamos cada palavra
+            compartilhada e valorizamos o tempo dedicado para nos contar sobre
+            sua jornada conosco.
           </p>
         </div>
 
@@ -55,13 +61,16 @@ export default function Clients() {
 
             <div>
               <strong>Jhon Doe</strong>
-              <p>Programador</p>
+              <p>Cliente</p>
             </div>
           </div>
 
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
-            suscipit est quia dignissimos.
+            Recomendo sem dúvida alguma! Sempre confio meus veículos de leilão a
+            essa transportadora e nunca tive problemas. Eles têm sido
+            consistentemente confiáveis, cuidadosos e pontuais em todas as
+            minhas remessas. Se você precisa transportar um veículo com
+            segurança e tranquilidade, essa é a escolha certa!
           </p>
         </div>
         <div className={styles.comment}>
@@ -75,15 +84,15 @@ export default function Clients() {
 
             <div>
               <strong>Jhon Doe</strong>
-              <p>Programador</p>
+              <p>Cliente</p>
             </div>
           </div>
 
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
-            suscipit est quia dignissimos officiis qui enim, commodi numquam
-            nulla ipsa ipsam, cupiditate a excepturi quam. Quos, aliquam eveniet
-            .
+            Excelente serviço! Eu estava preocupado em confiar meu carro a uma
+            transportadora, mas eles me deixaram completamente à vontade. A
+            equipe demonstrou profissionalismo e conhecimento em lidar com
+            veículos de alto valor.
           </p>
         </div>
       </div>

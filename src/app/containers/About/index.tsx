@@ -1,11 +1,9 @@
-
-import { IoIosPeople } from "react-icons/io";
 import { BsAwardFill } from "react-icons/bs";
-import { MdMiscellaneousServices } from "react-icons/md";
-
-import carWash from "../../assets/car-wash.jpg";
+import { HiBadgeCheck } from "react-icons/hi";
+import { FaShippingFast } from "react-icons/fa";
 
 import styles from "./styles.module.scss";
+
 export default function About() {
   return (
     <section id="about" className={styles.about}>
@@ -35,26 +33,26 @@ export default function About() {
           <div className={styles.cardContainer}>
             <div className={styles.card}>
               <div>
-                <IoIosPeople size="30px" color="#ffffff" />
+                <FaShippingFast size="30px" color="#ffffff" />
               </div>
-              <h4>+1800</h4>
-              <p>Clientes atendidos</p>
+              <h4></h4>
+              <p>Rapidez</p>
+            </div>
+
+            <div className={styles.card}>
+              <div>
+                <HiBadgeCheck size="30px" color="#ffffff" />
+              </div>
+              <h4></h4>
+              <p>Confiabilidade</p>
             </div>
 
             <div className={styles.card}>
               <div>
                 <BsAwardFill size="30px" color="#ffffff" />
               </div>
-              <h4>+3</h4>
-              <p>Premiações</p>
-            </div>
-
-            <div className={styles.card}>
-              <div>
-                <MdMiscellaneousServices size="30px" color="#ffffff" />
-              </div>
-              <h4>+1527</h4>
-              <p>Serviços concluídos</p>
+              <h4></h4>
+              <p>Segurança</p>
             </div>
           </div>
           <p>

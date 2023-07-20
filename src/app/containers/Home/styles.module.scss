@@ -74,3 +74,21 @@
     }
   }
 }
+
+.wppBtn {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1;
+  box-shadow: 0px 3px 7px -4px rgba(231, 29, 53, 0.6);
+
+  animation: animation 2s ease infinite;
+}
+@keyframes animation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: translateY(1.1);
+  }
+}

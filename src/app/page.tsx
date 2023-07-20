@@ -16,7 +16,10 @@ export default function Index() {
       <About />
       <section id="budget" className={styles.carCare}>
         <p>Faça um orçamento sem compromisso.</p>
-        <a href="/orçamento">
+        <a
+          href="https://wa.me/5531997476378?text=Ol%C3%A1%2C+vim+pelo+seu+site.+Poderia+me+ajudar%3F"
+          target="_blank"
+        >
           Fazer orçamento
           <FaRegArrowAltCircleRight color="#333" />
         </a>

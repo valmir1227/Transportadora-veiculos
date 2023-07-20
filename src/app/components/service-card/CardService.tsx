@@ -1,10 +1,8 @@
-import Image from "next/image";
-import carPolish from "../../assets/car-polish.jpg";
-
+import Image, { StaticImageData } from "next/image";
 import styles from "./style.module.scss";
 
 interface CardServicesProps {
-  image: string;
+  image: StaticImageData;
   description: string;
 }
 
