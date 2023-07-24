@@ -1,10 +1,70 @@
+import { useState } from "react";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import styles from "./styles.module.scss";
 
 export default function Clients() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+
+  function sendEmail(e: any) {
+    e.preventDefault();
+
+    if (!name || !email || !message) {
+      toast.warn("Os campos nome, email e mensagem são obrigatótios!", {});
+      return;
+    }
+
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+      phone: phone,
+      subject: subject,
+    };
+
+    emailjs
+      .send(
+        "service_w53drkt",
+        "template_8mkdpva",
+        templateParams,
+        "sDMTEniq3XXEHaX0r"
+      )
+      .then(
+        (response) => {
+          toast.success("Email Enviado!", {});
+          setName("");
+          setEmail("");
+          setMessage("");
+          setPhone("");
+          setSubject("");
+        },
+        (err) => {
+          toast.error("Desculpe aconteceu um erro :/", {});
+        }
+      );
+  }
+
   return (
     <section id="contact" className={styles.section}>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       <div className={styles.contact}>
         <div>
           <h2>
@@ -18,19 +78,49 @@ export default function Clients() {
             nossos serviços até resolver quaisquer dúvidas ou preocupações que
             você possa ter.
           </p>
-          <form>
+          <form onSubmit={sendEmail}>
             <strong>Envie-nos uma mensagem</strong>
             <div className={styles.inputGroup}>
               <div>
-                <input type="text" placeholder="Seu Nome" />
-                <input type="text" placeholder="E-mail" />
+                <input
+                  type="text"
+                  placeholder="Seu Nome"
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="E-mail"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                  required
+                />
               </div>
               <div>
-                <input type="tel" placeholder="Telefone" />
-                <input type="text" placeholder="Assunto" />
+                <input
+                  type="tel"
+                  placeholder="Telefone"
+                  onChange={(e) => setPhone(e.target.value)}
+                  value={phone}
+                  pattern="[0-9]{10,11}"
+                  title="Telefone deve conter apenas números e ter entre 10 e 11 dígitos"
+                />
+                <input
+                  type="text"
+                  placeholder="Assunto"
+                  onChange={(e) => setSubject(e.target.value)}
+                  value={subject}
+                />
               </div>
             </div>
-            <textarea rows={7} placeholder="Sua Mensagem..."></textarea>
+            <textarea
+              rows={7}
+              placeholder="Sua Mensagem..."
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
+              required
+            ></textarea>
             <button type="submit">Enviar</button>
           </form>
         </div>
