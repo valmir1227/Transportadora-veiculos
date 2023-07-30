@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import defaultAvatar from "@/app/assets/default-avatar.png";
 import styles from "./styles.module.scss";
 
 export default function Clients() {
@@ -143,14 +144,14 @@ export default function Clients() {
         <div className={styles.comment}>
           <div className={styles.customer}>
             <Image
-              src="https://img.freepik.com/fotos-gratis/homem-consideravel-que-bebe-ao-ar-livre-o-cafe-com-oculos-de-sol-um-cara-com-barba-efeito-instagram_1212-819.jpg?w=1060&t=st=1685376407~exp=1685377007~hmac=42bbb346c348f394c552535e9d52bc3796e0862cddeb6209c400a2cff53d4ec7"
-              alt=""
+              src={defaultAvatar}
+              alt="Imagem de avatar padrão"
               width={200}
               height={200}
             />
 
             <div>
-              <strong>Jhon Doe</strong>
+              <strong>Marcio</strong>
               <p>Cliente</p>
             </div>
           </div>
@@ -166,14 +167,14 @@ export default function Clients() {
         <div className={styles.comment}>
           <div className={styles.customer}>
             <Image
-              src="https://img.freepik.com/fotos-gratis/foto-vertical-de-um-homem-afro-americano-atraente-posando-e-sorrindo_181624-15027.jpg?w=360&t=st=1685376446~exp=1685377046~hmac=1ec56426c137c89c1014d19e8a0e79a9b67692cc76e68a910f415ea7704f38fe"
-              alt=""
+              src={defaultAvatar}
+              alt="Imagem de avatar padrão"
               width={200}
               height={200}
             />
 
             <div>
-              <strong>Jhon Doe</strong>
+              <strong>Marcelo F</strong>
               <p>Cliente</p>
             </div>
           </div>

@@ -23,13 +23,13 @@ export default function RootLayout({
       <title>JL Transportes</title>
       <meta
         name="description"
-        content="Insira aqui uma descrição relevante do seu site, contendo palavras-chave importantes."
+        content="Nossa empresa é altamente especializada no transporte de uma ampla variedade de veículos em todo o país. Atendemos com excelência concessionárias, agências, locadoras, prefeituras e leiloeiros, proporcionando soluções de logística personalizadas."
       />
       <meta
         name="keywords"
-        content="insira, aqui, as, palavras, chaves, relevantes, do, seu, site"
+        content="Transporte, veículos, leiloeiros, carros, motos, cegonha, caminhão, transportes"
       />
-      <meta name="author" content="Nome do Autor" />
+      <meta name="author" content="Valmir Almeida Dev" />
       <meta name="robots" content="index, follow" />
       <meta name="language" content="Portuguese" />
       <meta name="revisit-after" content="7 days" />

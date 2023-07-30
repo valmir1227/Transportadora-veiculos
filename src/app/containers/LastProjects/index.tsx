@@ -4,7 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
-import cegonha from "../../assets/cegonha.jpg";
+import service1 from "../../assets/service1.jpeg";
+import service2 from "../../assets/service2.jpeg";
+import service3 from "../../assets/service3.jpeg";
 import styles from "./styles.module.scss";
 
 export default function LatestProjects() {
@@ -36,7 +38,7 @@ export default function LatestProjects() {
           <SwiperSlide>
             <div>
               <div className={styles.image}>
-                <Image src={cegonha} alt="" width={400} height={400} />
+                <Image src={service1} alt="" width={400} height={400} />
               </div>
               <div className={styles.serviceDescription}>
                 <h3>Veiculos de Leilão</h3>
@@ -51,7 +53,7 @@ export default function LatestProjects() {
           <SwiperSlide>
             <div>
               <div className={styles.image}>
-                <Image src={cegonha} alt="" width={400} height={400} />
+                <Image src={service2} alt="" width={400} height={400} />
               </div>
               <div className={styles.serviceDescription}>
                 <h3>Veiculos de Leilão</h3>
@@ -66,7 +68,7 @@ export default function LatestProjects() {
           <SwiperSlide>
             <div>
               <div className={styles.image}>
-                <Image src={cegonha} alt="" width={400} height={400} />
+                <Image src={service3} alt="" width={400} height={400} />
               </div>
               <div className={styles.serviceDescription}>
                 <h3>Veiculos de Leilão</h3>
@@ -81,7 +83,7 @@ export default function LatestProjects() {
           <SwiperSlide>
             <div>
               <div className={styles.image}>
-                <Image src={cegonha} alt="" width={400} height={400} />
+                <Image src={service1} alt="" width={400} height={400} />
               </div>
               <div className={styles.serviceDescription}>
                 <h3>Veiculos de Leilão</h3>
@@ -96,7 +98,7 @@ export default function LatestProjects() {
           <SwiperSlide>
             <div>
               <div className={styles.image}>
-                <Image src={cegonha} alt="" width={400} height={400} />
+                <Image src={service2} alt="" width={400} height={400} />
               </div>
               <div className={styles.serviceDescription}>
                 <h3>Veiculos de Leilão</h3>
