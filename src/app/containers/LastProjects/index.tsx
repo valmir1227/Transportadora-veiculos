@@ -40,13 +40,6 @@ export default function LatestProjects() {
               <div className={styles.image}>
                 <Image src={service1} alt="" width={400} height={400} />
               </div>
-              <div className={styles.serviceDescription}>
-                <h3>Veiculos de Leilão</h3>
-                <p>
-                  Transporte de veículos de leilão de São Paulo para Santa
-                  Catarina.
-                </p>
-              </div>
             </div>
           </SwiperSlide>
 
@@ -54,13 +47,6 @@ export default function LatestProjects() {
             <div>
               <div className={styles.image}>
                 <Image src={service2} alt="" width={400} height={400} />
-              </div>
-              <div className={styles.serviceDescription}>
-                <h3>Veiculos de Leilão</h3>
-                <p>
-                  Transporte de veículos de leilão de São Paulo para Santa
-                  Catarina.
-                </p>
               </div>
             </div>
           </SwiperSlide>
@@ -70,13 +56,6 @@ export default function LatestProjects() {
               <div className={styles.image}>
                 <Image src={service3} alt="" width={400} height={400} />
               </div>
-              <div className={styles.serviceDescription}>
-                <h3>Veiculos de Leilão</h3>
-                <p>
-                  Transporte de veículos de leilão de São Paulo para Santa
-                  Catarina.
-                </p>
-              </div>
             </div>
           </SwiperSlide>
 
@@ -85,13 +64,6 @@ export default function LatestProjects() {
               <div className={styles.image}>
                 <Image src={service1} alt="" width={400} height={400} />
               </div>
-              <div className={styles.serviceDescription}>
-                <h3>Veiculos de Leilão</h3>
-                <p>
-                  Transporte de veículos de leilão de São Paulo para Santa
-                  Catarina.
-                </p>
-              </div>
             </div>
           </SwiperSlide>
 
@@ -99,13 +71,6 @@ export default function LatestProjects() {
             <div>
               <div className={styles.image}>
                 <Image src={service2} alt="" width={400} height={400} />
-              </div>
-              <div className={styles.serviceDescription}>
-                <h3>Veiculos de Leilão</h3>
-                <p>
-                  Transporte de veículos de leilão de São Paulo para Santa
-                  Catarina.
-                </p>
               </div>
             </div>
           </SwiperSlide>

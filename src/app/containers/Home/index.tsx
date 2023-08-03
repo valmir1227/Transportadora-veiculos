@@ -8,9 +8,11 @@ export default function Home() {
       <div className={styles.text}>
         <h1>Transporte seu veículo com segurança e confiabilidade.</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum
-          expedita praesentium vel et, ipsa quas non officiis <br />
-          minus quod at totam eum? Minus blanditiis itaque.
+          Transporte seu veículo com segurança e confiança na JL Transportes!{" "}
+          <br />
+          Somos especialistas em logística automotiva, oferecendo soluções
+          completas para o transporte de veículos, principalmente aqueles
+          provenientes de leilões.
         </p>
         <Link
           href="https://wa.me/5531997476378?text=Ol%C3%A1%2C+vim+pelo+seu+site.+Poderia+me+ajudar%3F"

@@ -14,20 +14,25 @@ export default function About() {
         <p>Visão geral da empresa </p>
         <main>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-            voluptates aliquam ea error magnam, assumenda optio modi eligendi.
-            Incidunt cumque obcaecati optio culpa blanditiis, sit amet
-            consectetur adipisicing elit. Omnis .vumque obcaecati optio culpa
-            blanditiis. Incidunt cumque obcaecati optio culpa blanditiis, sit
-            amet consectetur adipisicing elit.
+            Somos uma empresa especializada no transporte de veículos,
+            especialmente aqueles provenientes de leilões. Atendemos tanto
+            pessoas físicas quanto jurídicas, incluindo locadoras,
+            concessionárias e lojistas, oferecendo soluções completas de
+            logística automotiva em todo o território nacional.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            labore, maxime, quis recusandae voluptate temporibus in numquam
-            adipisci quidem consequuntur quas culpa, eveniet nulla non magni
-            dolorem nesciunt fugiat eos sunt ut harum impedit reprehenderit a?
-            Excepturi quo, fugiat dolorum error reiciendis autem aliquid ad
-            debitis, nesciunt ipsa, perspi.
+            Nossa experiência permite entregas pontuais e eficientes, garantindo
+            uma jornada tranquila e livre de preocupações para nossos clientes.
+            Nossa missão é simplificar o processo de transporte automotivo,
+            cuidando dos veículos de nossos clientes com responsabilidade e
+            profissionalismo em cada etapa do caminho.
+          </p>
+          <p>
+            Com uma variedade de opções de transporte disponíveis, somos
+            conhecidos por nossa capacidade de atender às necessidades
+            específicas de cada cliente. Nossa vasta experiência no transporte
+            de veículos de leilões nos permite assegurar entregas pontuais e
+            eficientes em qualquer destino desejado.
           </p>
 
           <div className={styles.cardContainer}>
@@ -56,9 +61,9 @@ export default function About() {
             </div>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde ex
-            commodi consequuntur enim quas perspiciatis iusto praesentium, quasi
-            laboriosam harum.
+            Nossa missão é simplificar o processo de transporte automotivo para
+            nossos clientes, permitindo que eles se concentrem em suas
+            atividades principais.
           </p>
         </main>
       </div>
