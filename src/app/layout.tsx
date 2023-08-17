@@ -33,7 +33,7 @@ export default function RootLayout({
       <meta name="robots" content="index, follow" />
       <meta name="language" content="Portuguese" />
       <meta name="revisit-after" content="7 days" />
-      <link rel="icon" href="caminho/do/seu/favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="/public/logo.png" />
       <body className={poppins.className}>
         <Header />
         <Navigation />
