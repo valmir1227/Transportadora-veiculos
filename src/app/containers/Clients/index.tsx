@@ -32,10 +32,10 @@ export default function Clients() {
 
     emailjs
       .send(
-        "service_w53drkt",
-        "template_8mkdpva",
+        "service_gv6xern",
+        "template_e4lq038",
         templateParams,
-        "sDMTEniq3XXEHaX0r"
+        "z4clU3eNOrp2xrlu9"
       )
       .then(
         (response) => {

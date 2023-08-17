@@ -17,9 +17,8 @@ export default function Footer() {
           <Image src={logo} alt="logo" />
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-          quidem praesentium, lor sit amet consectetur adipisicing elit.
-          Possimus, quidem praesentium.
+        Transporte seu veículo com segurança e confiança na JL Transportes!
+Somos especialistas em logística automotiva.
         </p>
         <div className={styles.socialMedia}>
           <Link

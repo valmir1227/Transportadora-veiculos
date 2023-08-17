@@ -18,8 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
+      <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <title>JL Transportes</title>
       <meta
         name="description"
