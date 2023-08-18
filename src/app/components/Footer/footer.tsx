@@ -17,8 +17,8 @@ export default function Footer() {
           <Image src={logo} alt="logo" />
         </div>
         <p>
-        Transporte seu veículo com segurança e confiança na JL Transportes!
-Somos especialistas em logística automotiva.
+          Transporte seu veículo com segurança e confiança na JL Transportes!
+          Somos especialistas em logística automotiva.
         </p>
         <div className={styles.socialMedia}>
           <Link
@@ -86,7 +86,11 @@ Somos especialistas em logística automotiva.
               <IoLocationOutline size="20px" />
               Localização
             </span>
-            <p>demo address 8901 Marmora Road Chi Minh City, Vietnam</p>
+            <p>
+              Rua Abraão Lincoln, 685, Bandeirinhas,
+              <br />
+              Betim, MG.
+            </p>
           </li>
 
           <li>
