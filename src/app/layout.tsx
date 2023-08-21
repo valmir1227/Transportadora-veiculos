@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>JL Transportes</title>
+      <title>JL Transportes|Empresa de transporte de veículos</title>
       <meta
         name="description"
         content="Nossa empresa é altamente especializada no transporte de uma ampla variedade de veículos em todo o país. Atendemos com excelência concessionárias, agências, locadoras, prefeituras e leiloeiros, proporcionando soluções de logística personalizadas."
