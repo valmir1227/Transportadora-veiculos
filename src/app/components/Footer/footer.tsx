@@ -87,9 +87,9 @@ export default function Footer() {
               Localização
             </span>
             <p>
-              Rua Abraão Lincoln, 685, Bandeirinhas,
+              Rodovia BR-262, S/N - Km 383,
               <br />
-              Betim, MG.
+              Boa Vista, Juatuba/MG, CEP 35675-000
             </p>
           </li>
 
