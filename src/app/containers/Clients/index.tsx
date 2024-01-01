@@ -186,6 +186,27 @@ export default function Clients() {
             veículos de alto valor.
           </p>
         </div>
+        <div className={styles.comment}>
+          <div className={styles.customer}>
+            <Image
+              src={defaultAvatar}
+              alt="Samuel Ivens"
+              width={200}
+              height={200}
+            />
+
+            <div>
+              <strong>Samuel Ivens</strong>
+              <p>Cliente</p>
+            </div>
+          </div>
+
+          <p>
+            Ficou muito bom o site, bem explicado bem prático ajuda muito na
+            praticidade ,que Deus continue abençoando e que vocês cresçam cada
+            dia mais com sabedoria e união deixo aqui meus sinceros Parabéns
+          </p>
+        </div>
       </div>
     </section>
   );
