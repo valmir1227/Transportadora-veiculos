@@ -4,6 +4,7 @@ import Header from "./components/Header/header";
 import "./styles/globals.scss";
 import Navigation from "./components/Navigation/navigation";
 import Footer from "./components/Footer/footer";
+import Map from "./containers/Map";
 
 const poppins = Inter({
   weight: ["300", "400", "500", "600", "700"],
@@ -34,12 +35,15 @@ export default function RootLayout({
       <meta name="language" content="Portuguese" />
       <meta name="revisit-after" content="7 days" />
       <link rel="icon" href="/public/logo.png" />
-      <meta name="google-site-verification" content="1T7vqp6NgC68QcazXhUWn-t6NiVtSKhGtPUIGjEUaoM" />
+      <meta
+        name="google-site-verification"
+        content="1T7vqp6NgC68QcazXhUWn-t6NiVtSKhGtPUIGjEUaoM"
+      />
       <body className={poppins.className}>
         <Header />
         <Navigation />
-
         {children}
+        <Map />
         <Footer />
       </body>
     </html>
