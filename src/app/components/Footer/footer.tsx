@@ -87,9 +87,9 @@ export default function Footer() {
               Localização
             </span>
             <p>
-              Rodovia BR-262, S/N - Km 383,
+              Rua Vicente de Oliveira Pinto, n° 475
               <br />
-              Boa Vista, Juatuba/MG, CEP 35675-000
+              Canaã, Juatuba/MG
             </p>
           </li>
 
